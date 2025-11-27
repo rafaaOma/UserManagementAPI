@@ -1,0 +1,29 @@
+GET http://localhost:5147/api/users
+
+###
+GET http://localhost:5147/api/users/1
+
+###
+GET http://localhost:5147/api/users/4
+
+###
+POST http://localhost:5147/api/users
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name":"sara",
+    "email":"sara@gmail.com"
+}
+###
+PUT http://localhost:5147/api/users/3
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name":"doa",
+    "email":"doaa@gmail.com",
+    "age":"GGG"
+}
+###
+DELETE http://localhost:5147/api/users/32222222
